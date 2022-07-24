@@ -1,0 +1,64 @@
+body
+{
+/*
+  esse padding tem que ser do tamanho 
+  do nosso menu, que possui 75px de altura 844x75px então o valor do padding-top será de 75px
+*/
+  padding-top: 75px;
+    
+}
+
+
+
+.box-shadow
+{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0, .05),
+              0 4px 8px 0 rgba(0,0,0, .05);                  
+}
+
+#home-quote
+{
+  background: url('../img/bg-quote.jpg') center center;
+  background-size: cover;
+}
+
+/*md do bootstrap para diminuir texto blockquote do bob*/
+@media(max-width: 767px)
+{
+  #home-quote .display-4
+  {
+    font-size: 2.5rem;
+  }
+  /*ajustando tamanho do menu e não deixando-o + fixo*/
+  body
+  {
+/*    tiramos o padding-top do mobile*/
+    padding: 0px;
+  }
+  .fixed-top
+  {
+    position: relative;
+  }
+}
+
+
+
+.pergunta
+{
+/*  poderia utilizar tb no html para dividir o <div>"class="dropdown-divider"</div>*/
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+
+.lista-plano li
+{
+  padding: 1rem;
+}
+
+
+
+/*vai selecionar todo li que vem apos um li ou seja o ultimo não terá padding*/
+.lista-plano li + li
+{
+  border-top: 1px solid rgba(0,0,0,.2);
+}
